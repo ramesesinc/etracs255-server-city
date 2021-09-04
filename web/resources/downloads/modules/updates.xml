@@ -74,5 +74,7 @@ entity.app.context=etracs25
 
   <import file="rptis/updates.pxml"/> 
   <import file="bpls/updates.pxml"/> 
+
+  <import file="market/updates.pxml"/> 
 </modules>
 </app>
