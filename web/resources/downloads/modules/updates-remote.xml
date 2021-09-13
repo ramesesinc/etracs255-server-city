@@ -14,70 +14,26 @@ ws.host=${pub_app_server_ip}:8060
 #res.host=${pub_app_server_ip}
 
 socketio.host=${pub_app_server_ip}:7080
-
-entity.app.host=${pub_app_server_ip}:8070
-entity.app.context=etracs25
-
-rpt.app.host=${pub_app_server_ip}:8070
-rpt.app.context=etracs25
 </env>
 <modules>
+  <module version="1.00" file="libs/commons-net-3.5.jar"  />
 
   <import file="custom/updates.pxml"/> 
 
-  <module version="1.00" file="libs/commons-net-3.5.jar"  />
+  <import file="core/updates.pxml"/> 
 
-  <module version="2.50" file="core/osiris2-client-themes.jar"  />
-  <module version="2.50" file="core/osiris2-client-ui.jar"  />
-  <module version="2.50" file="core/osiris2-draw.jar"  />
-  <module version="2.50" file="core/osiris2-framework.jar"  />
-  <module version="2.52" file="core/osiris2-report.jar"  />
-  <module version="2.51" file="core/rameses-client-ui.jar"  />
-  <module version="2.50" file="core/rameses-client-ui-bio.jar"  />
-  <module version="2.50" file="core/rameses-client-ui-jfx.jar"  />
-  <module version="2.50" file="core/rameses-client-notification-socketio.jar"  />
-  <module version="2.50" file="core/rameses-common2.jar"  />
-  <module version="2.50" file="core/rameses-custom-impl.jar"  />
-  <module version="2.50" file="core/rameses-jdbc16.jar"  />
-  <module version="2.51" file="core/rameses-seti.jar"  />
+  <import file="shared/updates.pxml"/> 
 
-  <module version="2.50" file="shared/client-system.jar"  />
-  <module version="2.50" file="shared/client-ui-extended.jar"  />
-  <module version="2.50" file="shared/rameses-client-menu.jar"  />
-  <module version="2.50" file="shared/rameses-client-report.jar"  />
-  <module version="2.50" file="shared/rameses-rules-mgmt.jar"  />
-  <module version="2.50" file="shared/rameses-workflow-mgmt.jar"  />
-  <module version="2.50" file="shared/rameses-enterprise.jar"  />
-  <module version="2.50" file="shared/rameses-enterprise-admin.jar"  />
-  <module version="2.50" file="shared/rameses-enterprise-admin-plugin.jar"  />
-  <module version="2.50" file="shared/rameses-enterprise-financial.jar"  />
-  <module version="2.50" file="shared/rameses-client-notification2.jar"  />
-  <module version="2.50" file="shared/rameses-email-client.jar"  />
-  <module version="2.50" file="shared/rameses-jasper-client.jar"  />
+  <import file="etracs/updates.pxml"/> 
 
-  <module version="2.50" file="etracs/rameses-etracs-main.jar"  />
-  <module version="2.50" file="etracs/rameses-gov-etracs-ngas-report.jar"  />
-  <module version="2.50" file="etracs/rameses-gov-etracs-sre-report.jar"  />
-  <module version="2.50" file="etracs/rameses-gov-etracs-tools.jar"  />
-  <module version="2.50" file="etracs/rameses-gov-etracs-signatory-template.jar"  />
-  <module version="2.50" file="etracs/rameses-gov-lgu.jar"  />
-  <module version="2.50" file="etracs/rameses-gov-lgu-treasury.jar"  />
+  <import file="entity/pub-updates.pxml"/> 
 
-  <module version="2.50" file="entity/rameses-enterprise-entity.jar"  />
-  <module version="2.50" file="entity/rameses-enterprise-entity-tool.jar"  />
-  <module version="2.50" file="entity/rameses-gov-etracs-entity.jar"  />
+  <import file="treasury/updates.pxml"/> 
 
-  <module version="2.51" file="treasury/rameses-treasury-common.jar"  />
-  <module version="2.50" file="treasury/rameses-gov-depositslip.jar"  />
-  <module version="2.52" file="treasury/rameses-gov-treasury.jar"  />
-  <module version="2.50" file="treasury/rameses-gov-treasury-report.jar"  />
-  <module version="2.51" file="treasury/rameses-gov-treasury-tool.jar"  />
+  <import file="queue/updates.pxml"/> 
 
-  <module version="2.50" file="queue/rameses-queueing.jar"  />
+  <import file="rptis/pub-updates.pxml"/> 
 
-  <import file="rptis/updates.pxml"/> 
-  <import file="bpls/updates.pxml"/> 
-
-  <import file="market/updates.pxml"/> 
+  <import file="bpls/pub-updates.pxml"/> 
 </modules>
 </app>
