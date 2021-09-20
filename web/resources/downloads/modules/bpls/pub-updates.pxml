@@ -1,6 +1,6 @@
 <app>
 <env>
-bpls.app.host=${app_server_ip}:8070
+bpls.app.host=${pub_app_server_ip}:8070
 bpls.app.context=etracs25
 </env>
 <modules>
