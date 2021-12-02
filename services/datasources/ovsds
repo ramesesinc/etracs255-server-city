@@ -1,0 +1,5 @@
+dialect=mssql
+driverClass=com.microsoft.sqlserver.jdbc.SQLServerDriver
+url=jdbc:sqlserver://${dbserver_host};DatabaseName=${db_ovs}
+user=${dbserver_user}
+pwd=${dbserver_pass}

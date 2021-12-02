@@ -1,0 +1,8 @@
+<app>
+<env>
+
+</env>
+<modules>
+  <module version="1.01" file="ovs/rameses-gov-ovs.jar"  />
+</modules>
+</app>
